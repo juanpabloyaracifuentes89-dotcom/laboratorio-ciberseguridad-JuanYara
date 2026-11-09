@@ -9,3 +9,4 @@ COPY app.py /app/app.py
 RUN pip install --no-cache-dir flask requests
 
 CMD ["python", "app.py"]
+
