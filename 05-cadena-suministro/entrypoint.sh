@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 
 echo "=== INICIANDO SERVICIO COMPROMETIDO EN LA CADENA DE SUMINISTRO ==="
 echo "Verificando integridad del contenedor..."
