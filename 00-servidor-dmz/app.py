@@ -1,4 +1,4 @@
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+﻿from http.server import HTTPServer, SimpleHTTPRequestHandler
 import os
 
 class CustomHandler(SimpleHTTPRequestHandler):
@@ -8,7 +8,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
         self.end_headers()
         
         # Personalizar con el nombre del estudiante / grupo
-        estudiante = os.getenv("ESTUDIANTE_NOMBRE", "El profe Esteban♪/ Grupo: Los Magnificos (Team A)")
+        estudiante = os.getenv("ESTUDIANTE_NOMBRE", "Juan Pablo Yara Cifuentes")
         
         html_content = f"""
         <!DOCTYPE html>
@@ -25,11 +25,11 @@ class CustomHandler(SimpleHTTPRequestHandler):
         </head>
         <body>
             <div class="container">
-                <h1>🛡️ Servidor Objetivo DMZ</h1>
+                <h1>ðŸ›¡ï¸ Servidor Objetivo DMZ</h1>
                 <p>Estado del servicio: <span class="status">ONLINE / ACTIVO</span></p>
                 <hr>
                 <p><strong>Laboratorio de Ciberseguridad:</strong> {estudiante}</p>
-                <p>Este nodo actúa como objetivo central para las pruebas de tráfico y análisis de logs.</p>
+                <p>Este nodo actÃºa como objetivo central para las pruebas de trÃ¡fico y anÃ¡lisis de logs.</p>
             </div>
         </body>
         </html>
@@ -41,3 +41,4 @@ if __name__ == "__main__":
     httpd = HTTPServer(server_address, CustomHandler)
     print("Servidor DMZ iniciado y escuchando en el puerto 8080...")
     httpd.serve_forever()
+
